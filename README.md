@@ -90,8 +90,28 @@ and the tree for the pages should look like this:
 |   └───anotherSubDomain
 ```
 
-5. That's it, now create pages in respective directories and it'll be mapped to that subdomains.
+5. That's it, now create pages in respective directories and it'll be mapped to those subdomains.
 
+## Bonus 🎊🎉
+Now if you want to have common directory or pages in all the subdomains like this:
+- `blog.example.com/common`
+- `blog.example.com/shared/page`
+- `projects.example.com/common`
+- `projects.example.com/shared/page`
+
+simply create the files/folders at the root of `pages` those pages/folders will be treated as shared pages/folders:
+for the above case, it will look like:
+```
+|   
+|─pages
+|   ├───blog
+|   ├───projects
+|   ├───main-domain
+|   ├───common.vue // not added in config file
+|   └───shared // not added in config file
+|         └───page.vue
+
+```
 
 ## Options
 ### `subDomains`
