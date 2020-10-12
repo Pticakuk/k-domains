@@ -59,12 +59,10 @@ yarn add @nuxtjs/router
       [ "k-domains", {
           subDomains: [ ], // List of directories to hold te pages for your subdomains
           rootDomain: "root-domain" //  directory to hold the pages for root domain  
-      }
-      ],
+      }],
       ["@nuxtjs/router",{
           keepDefaultRouter: true // this line is mandatory...
-      }
-      ]
+      }]
     ]
 }
 ```
@@ -75,12 +73,10 @@ yarn add @nuxtjs/router
       [ "k-domains", {
           subDomains: ["blog", "projects", "anotherSubDomain" ], // List of directories to hold te pages for your subdomains
           rootDomain: "main-domain" //  directory to hold the pages for root domain  
-      }
-      ],
+      }],
       ["@nuxtjs/router",{
           keepDefaultRouter: true // this line is mandatory...
-      }
-      ]
+      }]
     ]
 }
 ``` 
